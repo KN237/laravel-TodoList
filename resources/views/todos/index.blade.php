@@ -21,7 +21,7 @@
     
         @else
 
-        <a href="/todos/do/{{$todo->id}}"><i class="fas fa-check" style="color:rgba(51, 53, 52, 0.644);"></i></a> <a href="/todos/show/{{$todo->id}}" style="text-decoration: none; color:inherit">{{$todo->titre}}</a> <a href="/todos/edit/{{$todo->id}}" ><i class="fas fa-pencil-alt" style="color:rgb(24, 135, 240);"></i></a> <a href="/todos/delete/{{$todo->id}}"><i class="fas fa-times" style="color: rgba(235, 22, 22, 0.555)"></i></a>
+        <a href="/todos/do/{{$todo->id}}"><i class="fas fa-check" style="color:rgba(51, 53, 52, 0.644);"></i></a> <a href="/todos/show/{{$todo->id}}" style="text-decoration: none; color:inherit">{{$todo->titre}}</a> <a href="/todos/edit/{{$todo->id}}" ><i class="fas fa-pencil-alt" style="color:rgb(51, 177, 235);"></i></a> <a href="/todos/delete/{{$todo->id}}"><i class="fas fa-times" style="color: rgba(235, 22, 22, 0.555)"></i></a>
     
         @endif
         
