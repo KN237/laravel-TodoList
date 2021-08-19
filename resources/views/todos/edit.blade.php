@@ -13,36 +13,37 @@
  <div class="body">
 
     @if( session()->has('message'))
-
-    <div class="alert" style="background: rgba(129, 248, 145, 0.596); width:90%; height:60px; margin-bottom:5%;margin-top:10%; padding:5%;box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.329);">
+<center>
+    <div class="alert" style="background: rgba(129, 248, 145, 0.596); width:70%; height:60px; margin-bottom:5%;margin-top:10%; padding:5%;box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.329);">
         
         {{ session()->get('message')}}
 
     </div>
+</center>
 
     @endif
 
 
     @if( session()->has('error'))
-
-    <div class="alert" style="background: rgba(247, 71, 80, 0.596); width:90%; height:60px; margin-bottom:5%;margin-top:10%; padding:5%;box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.329);">
+<center>
+    <div class="alert" style="background: rgba(247, 71, 80, 0.596); width:70%; height:60px; margin-bottom:5%;margin-top:10%; padding:5%;box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.329);">
 
         {{ session()->get('message')}}
 
     </div>
-
+</center>
     @endif
 
     @if ($errors->any())
-
-    <div class="alert" style="background: rgba(243, 28, 39, 0.274); width:90%; height:60px; margin-bottom:5%;margin-top:10% ;padding:5%;box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.329);">
+<center>
+    <div class="alert" style="background: rgba(243, 28, 39, 0.274); width:70%; height:60px; margin-bottom:5%;margin-top:10% ;padding:5%;box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.329);">
 
         @foreach ($errors->all() as $error)
                 <p>{{ $error }}</p>
             @endforeach
 
     </div>
-
+</center>
     @endif
 
 
