@@ -17,6 +17,9 @@
     <!-- Styles -->
 
     <style>
+    *{
+        transition: 0.2s;
+    }
         html,
         body {
             background: rgb(51, 177, 235);
