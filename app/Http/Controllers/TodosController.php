@@ -90,7 +90,7 @@ class TodosController extends Controller
   
           if( $validate){
   
-          $todo = Todo::find($id)->first();
+          $todo = Todo::where('id',$id)->first();
           $todo->titre=$request->titre;
           $todo->save();
   
@@ -119,10 +119,10 @@ class TodosController extends Controller
           
       }
 
-      public function do($id){
+      public function do(Request $request,$id){
           
   
-          $todo = Todo::find($id)->first();
+      $todo = Todo::where('id',$request->id)->first();
 
           if($todo->effectue==false){
           $todo->effectue=true;

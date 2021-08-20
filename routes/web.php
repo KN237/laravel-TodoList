@@ -26,4 +26,4 @@ Route::get('/todos/delete/{id}','TodosController@destroy');
 Route::get('/todos/show/{id}','TodosController@show');
 Route::get('/todos/edit/{id}','TodosController@edit');
 Route::post('/todos/update/{id}','TodosController@update');
-Route::get('/todos/do/{id}','TodosController@do');
+Route::post('/todos/do/{id}','TodosController@do');

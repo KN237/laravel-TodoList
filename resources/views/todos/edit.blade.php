@@ -53,7 +53,7 @@
 @csrf
         <input type="text" name="titre" placeholder="entrez le libellé de la tache" style="grid-area:ti; margin-bottom:2%;height:40px;" value="{{$todo->titre}}">
 
-        <textarea name="description" placeholder="entrez une description de la tache" style="grid-area:des;margin-bottom:2%;resize:none;height:120px;">{{$description->text}}</textarea>
+        <textarea name="description" placeholder="entrez une description de la tache" maxlength="100" style="grid-area:des;margin-bottom:2%;resize:none;height:120px;">{{$description->text}}</textarea>
 
         <i class="fas fa-plus-circle" style="color: rgb(51, 177, 235);grid-area:pl; margin:5%;display:none;"></i>
 
